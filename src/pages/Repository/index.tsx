@@ -29,6 +29,7 @@ interface Issue {
   html_url: string;
   user: {
     login: string;
+    avatar_url: string;
   };
 }
 
@@ -88,17 +89,19 @@ const Repository: React.FC = () => {
       )}
 
       <Issues>
-        <Link to={`teste`}>
+        {issues.map(issues => (
+        <a key={issues.id} href={issues.html_url} target="blanck">
           <img
-            src="https://avatars.githubusercontent.com/u/46034178?v=4"
-            alt="Johnatan"
+            src={issues.user.avatar_url}
+            alt={issues.user.login}
           />
           <div>
-            <strong>Facebook</strong>
-            <p>Descrição do repositório</p>
+            <strong>{issues.title}</strong>
+            <p>{issues.user.login}</p>
           </div>
           <FiChevronRight size={20} />
-        </Link>
+        </a>
+        ))}
       </Issues>
     </>
   );
