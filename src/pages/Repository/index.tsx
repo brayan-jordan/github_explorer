@@ -58,32 +58,34 @@ const Repository: React.FC = () => {
         </Link>
       </Header>
 
+        {repository && (
       <RepositoryInfo>
         <header>
           <img
-            src="https://avatars.githubusercontent.com/u/69631?s=200&v=4"
-            alt="Facebook"
+            src={repository.owner.avatar_url}
+            alt={repository.owner.login}
           />
           <div>
-            <strong>Facebook</strong>
-            <p>Repositório do ReactJS no GitHub do Facebook</p>
+            <strong>{repository.full_name}</strong>
+            <p>{repository.description}</p>
           </div>
         </header>
         <ul>
           <li>
-            <strong>172K</strong>
+            <strong>{repository.stargazers_count}</strong>
             <span>Stars</span>
           </li>
           <li>
-            <strong>34K</strong>
+            <strong>{repository.forks_count}</strong>
             <span>Forks</span>
           </li>
           <li>
-            <strong>574</strong>
+            <strong>{repository.open_issues_count}</strong>
             <span>Issues abertas</span>
           </li>
         </ul>
       </RepositoryInfo>
+      )}
 
       <Issues>
         <Link to={`teste`}>
