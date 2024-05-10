@@ -1,17 +1,17 @@
-# github_explorer
+# github_explorer 🧭
 
 Explore repositórios do GitHub de maneira simples através de uma aplicação WEB, que se integra à API pública do GitHub.
 
 ## Imagens
 
 #### Home
-![Home](https://github.com/brayan-jordan/github_explorer/blob/main/docs/home_empty.jpg?raw=true)
+![Home](https://raw.githubusercontent.com/brayan-jordan/github_explorer/master/docs/home_empty.jpg)
 
 #### Home com projeto encontrado
-![Home com projeto encontrado](https://github.com/brayan-jordan/github_explorer/blob/main/docs/home_with_project.jpg?raw=true)
+![Home com projeto encontrado](https://raw.githubusercontent.com/brayan-jordan/github_explorer/master/docs/home_with_project.jpg)
 
 #### Visualizar projeto
-![Visualizar projeto](https://github.com/brayan-jordan/github_explorer/blob/main/docs/project.jpg?raw=true)
+![Visualizar projeto](https://raw.githubusercontent.com/brayan-jordan/github_explorer/master/docs/project.jpg)
 
 ## Setup da aplicação localmente
 
