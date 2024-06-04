@@ -1,4 +1,4 @@
-# github_explorer 🧭
+# github-explorer 🧭
 
 Explore repositórios do GitHub de maneira simples através de uma aplicação WEB, que se integra à API pública do GitHub.
 
